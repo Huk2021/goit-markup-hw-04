@@ -147,6 +147,13 @@ section {
 .auth-nav .link:focus {
   color: var(--accent-color);
 }
+.nav-svg {
+  margin-right: 10px;
+  fill: currentColor;
+}
+.nav-svg:hover {
+  fill: var(--accent-color);
+}
 
 /*======== ГЕРОЙ===========*/
 
@@ -223,7 +230,23 @@ section {
 .advantages {
   padding-bottom: 0px;
 }
-
+.feature {
+  width: 270px;
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+.feature {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.feature-svg {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 /* =====================ЧЕМ МЫ ЗАНИМАЕМСЯ============ */
 
 .promo-title {
@@ -293,6 +316,40 @@ section {
   padding-bottom: 30px;
 }
 
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 16px;
+  padding-right: 32px;
+  padding-bottom: 30px;
+  padding-left: 32px;
+}
+.social-link .social-svg:hover,
+.social-link .social-svg:focus {
+  color: var(--accent-color);
+}
+
+/* +++++++++++++++++ПОСТОЯННЫЕ КЛИЕНТЫ+++++++ */
+
+.clients-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+.clients-list {
+  display: flex;
+  align-items: center;
+}
+.part-list {
+  width: 170px;
+  height: 92;
+  border: solid #afb1b8;
+}
 /* ========ФУТЕР======= */
 .footer {
   background: #2f303a;
