@@ -143,15 +143,14 @@ section {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.auth-nav .link:hover,
-.auth-nav .link:focus {
-  color: var(--accent-color);
+.auth-link {
+  display: flex;
+  align-items: center;
 }
 .nav-svg {
   margin-right: 10px;
-  fill: currentColor;
 }
-.nav-svg:hover {
+.auth-link:hover {
   fill: var(--accent-color);
 }
 
@@ -321,14 +320,21 @@ section {
   align-items: center;
   justify-content: space-evenly;
   padding-top: 16px;
-  padding-right: 32px;
-  padding-bottom: 30px;
-  padding-left: 32px;
+  fill: currentColor;
 }
-.social-link .social-svg:hover,
+
+.social-svg:hover,
+.social-svg:focus {
+  fill: #ffffff;
+  background-color: var(--accent-color);
+}
+/* .social-link .social-svg:hover,
 .social-link .social-svg:focus {
   color: var(--accent-color);
-}
+} */
+/* .social-list:not(:last-child) {
+  margin-right: 10px;
+} */
 
 /* +++++++++++++++++ПОСТОЯННЫЕ КЛИЕНТЫ+++++++ */
 
@@ -344,15 +350,30 @@ section {
 .clients-list {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
+
 .part-list {
   width: 170px;
-  height: 92;
-  border: solid #afb1b8;
+  height: 92px;
+  border-radius: 4px;
+  outline: solid 1px #afb1b8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clients-svg {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.part-list .clients-svg:hover,
+.part-list .clients-svg:focus {
+  fill: var(--accent-color);
 }
 /* ========ФУТЕР======= */
 .footer {
-  background: #2f303a;
+  background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -400,6 +421,37 @@ section {
   margin-bottom: 9px;
 }
 
+.social-network {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.social-network-svg {
+  fill: var(--primary-white-color);
+  margin-left: 10px;
+}
+.social-network-svg:hover,
+.social-network-svg:focus {
+  background-color: var(--accent-color);
+}
+/* .social-network-list:not(:last-child) {
+  margin-bottom: 10px; */
+
+.invitation {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: var(--primary-white-color);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  margin: left 156px;
+}
+.footer-blok {
+  display: flex;
+}
+.invitation-blok {
+  margin-left: 70px;
+}
 /* ===========ПОРТФОЛИО======= */
 
 .button-nav {
@@ -430,6 +482,8 @@ section {
 .nav-button:focus {
   color: var(--primary-white-color);
   background: var(--accent-color);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 3px 1px rgba(61, 38, 38, 0.1);
 }
 .work-list {
   display: flex;
@@ -442,7 +496,11 @@ section {
   margin-left: 30px;
   margin-top: 30px;
 }
-
+.work-list-item:hover {
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+}
 .work-list-title {
   color: var(--title-text-color);
   font-weight: 700;
