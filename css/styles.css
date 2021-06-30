@@ -149,18 +149,17 @@ section {
 .auth-nav .link:focus {
   color: var(--accent-color);
 }
-/* .auth-link {
-  display: block;
-  align-items: center;
-} */
+
 .nav-svg {
   fill: currentColor;
   margin-right: 10px;
 }
-.auth-link:hover {
+.auth-link:hover,
+.auth-link:focus {
   fill: var(--accent-color);
 }
-.auth-link:hover {
+.nav-svg:hover,
+.nav-svg:focus {
   fill: var(--accent-color);
 }
 
@@ -387,6 +386,13 @@ section {
 .clients-svg {
   fill: currentColor;
 }
+.clients-svg:hover,
+.clients-svg:focus {
+  fill: var(--accent-color);
+}
+/* .clients-link .clients-svg:hover {
+  fill: var(--accent-color);
+} */
 
 /* ========ФУТЕР======= */
 .footer {
