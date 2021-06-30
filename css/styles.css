@@ -127,13 +127,13 @@ section {
   align-items: center;
   margin-left: auto;
 }
-.auth-nav .auth-link {
-  display: block;
+.auth-nav-item {
+  align-items: center;
+  justify-content: center;
+  margin-left: 30px;
 }
-
-.auth-nav-mail {
-  margin-left: auto;
-  margin-right: 50px;
+.auth-nav-item:first-child {
+  margin-left: 0px;
 }
 
 .auth-nav .link {
@@ -142,17 +142,23 @@ section {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  display: block;
+  align-items: center;
 }
 .auth-nav .link:hover,
 .auth-nav .link:focus {
   color: var(--accent-color);
 }
-.auth-link {
-  display: flex;
+/* .auth-link {
+  display: block;
   align-items: center;
-}
+} */
 .nav-svg {
+  fill: currentColor;
   margin-right: 10px;
+}
+.auth-link:hover {
+  fill: var(--accent-color);
 }
 .auth-link:hover {
   fill: var(--accent-color);
@@ -326,19 +332,27 @@ section {
   padding-top: 16px;
   fill: currentColor;
 }
-
+.social-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  color: #afb1b8;
+}
+.social-link:hover,
+.social-link:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+.social-svg {
+  fill: currentColor;
+}
 .social-svg:hover,
 .social-svg:focus {
   fill: #ffffff;
-  background-color: var(--accent-color);
 }
-/* .social-link .social-svg:hover,
-.social-link .social-svg:focus {
-  color: var(--accent-color);
-} */
-/* .social-list:not(:last-child) {
-  margin-right: 10px;
-} */
 
 /* +++++++++++++++++ПОСТОЯННЫЕ КЛИЕНТЫ+++++++ */
 
@@ -356,25 +370,24 @@ section {
   align-items: center;
   justify-content: space-between;
 }
-
-.part-list {
+.clients-link {
+  display: flex;
   width: 170px;
   height: 92px;
-  border-radius: 4px;
-  outline: solid 1px #afb1b8;
-  display: flex;
   justify-content: center;
   align-items: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  color: var(--accent-color);
 }
 .clients-svg {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  fill: currentColor;
 }
-.part-list .clients-svg:hover,
-.part-list .clients-svg:focus {
-  fill: var(--accent-color);
-}
+
 /* ========ФУТЕР======= */
 .footer {
   background-color: #2f303a;
@@ -425,22 +438,6 @@ section {
   margin-bottom: 9px;
 }
 
-.social-network {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.social-network-svg {
-  fill: var(--primary-white-color);
-  margin-left: 10px;
-}
-.social-network-svg:hover,
-.social-network-svg:focus {
-  background-color: var(--accent-color);
-}
-/* .social-network-list:not(:last-child) {
-  margin-bottom: 10px; */
-
 .invitation {
   font-size: 14px;
   line-height: 1.14;
@@ -453,9 +450,34 @@ section {
 .footer-blok {
   display: flex;
 }
+.address-blok {
+  display: block;
+}
 .invitation-blok {
   margin-left: 70px;
 }
+.social-network {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.social-network-link {
+  display: flex;
+  padding: 12px;
+  color: var(--primary-white-color);
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-left: 10px;
+}
+.social-network-link:hover,
+.social-network-link:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+.social-network-svg {
+  fill: var(--primary-white-color);
+}
+
 /* ===========ПОРТФОЛИО======= */
 
 .button-nav {
