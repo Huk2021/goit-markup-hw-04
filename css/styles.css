@@ -386,10 +386,10 @@ section {
   color: var(--accent-color);
 }
 
-/* .clients-svg:hover,
+.clients-svg:hover,
 .clients-svg:focus {
   fill: var(--accent-color);
-} */
+}
 
 /* ========ФУТЕР======= */
 .footer {
