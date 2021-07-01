@@ -378,19 +378,16 @@ section {
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
-
+.clients-svg {
+  fill: #afb1b8;
+}
 .clients-link:hover,
 .clients-link:focus {
   color: var(--accent-color);
 }
-.clients-svg {
-  fill: currentColor;
-}
-.clients-svg:hover,
+
+/* .clients-svg:hover,
 .clients-svg:focus {
-  fill: var(--accent-color);
-}
-/* .clients-link .clients-svg:hover {
   fill: var(--accent-color);
 } */
 
@@ -455,6 +452,7 @@ section {
 }
 .footer-blok {
   display: flex;
+  align-items: baseline;
 }
 .address-blok {
   display: block;
@@ -473,8 +471,9 @@ section {
   color: var(--primary-white-color);
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
-  margin-left: 10px;
+  margin-right: 10px;
 }
+
 .social-network-link:hover,
 .social-network-link:focus {
   color: var(--primary-white-color);
